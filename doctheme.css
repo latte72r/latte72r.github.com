@@ -6,13 +6,6 @@
     font-weight: normal;
     src: url("./NotoSansMonoJP-Regular.woff2") format("woff2");
 }
-/* unset some styles from the classic stylesheet */
-@font-face {
-    font-family: "Noto Sans Mono JP";
-    font-style: normal;
-    font-weight: bold;
-    src: url("./NotoSansMonoJP-Bold.woff2") format("woff2");
-}
 
 div.document,
 body {
