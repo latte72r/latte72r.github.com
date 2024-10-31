@@ -1,14 +1,15 @@
+
 /* unset some styles from the classic stylesheet */
 @font-face {
-    /*フォントの名前*/
-    font-family: "Noto Sans JP";
-    /*フォントファイルへのパス（複数指定の場合、上から順に読み込まれる）*/
-    src: url("./NotoSansJP-Regular.woff2") format("woff2");
+    font-family: "Noto Sans Mono JP";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./NotoSansMonoJP-Regular.woff2") format("woff2");
 }
 
 div.document,
 body {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans Mono JP", sans-serif;
     background-color: inherit;
     color: inherit;
 }
@@ -35,11 +36,15 @@ dt:hover>a.headerlink {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #2980b9;
     border-bottom: 0.1em solid #2980b9;
-    padding: 0.2em 0.6em;
+    padding: 0.1em 1.0em;
     display: inline-block;
+}
+
+h3 {
+    font-size: 1.4em;
 }
 
 aside.sidebar {
@@ -74,7 +79,6 @@ nav {
 
 nav a {
     font-size: 1.4em;
-    font-style: italic;
     color: #0072aa;
     text-decoration: none;
     padding: 0.4em 0.6em;
@@ -87,7 +91,6 @@ nav a:visited {
 
 nav p {
     font-size: 1.4em;
-    font-style: italic;
     color: #555;
     text-decoration: none;
     padding: 0.4em 0.6em;
@@ -333,15 +336,6 @@ table tbody>tr:nth-of-type(even) {
     background-color: rgb(237 238 242);
 }
 
-.sig {
-    font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", monospace;
-}
-
-.param-name {
-    font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", monospace;
-    font-style: italic;
-}
-
 pre {
     line-height: 125%;
     overflow-x: scroll;
@@ -350,11 +344,6 @@ pre {
 
 pre::-webkit-scrollbar {
     display: none;
-}
-
-.highlight {
-    border-radius: 0.6rem;
-    background: #f8f8f8;
 }
 
 @media (max-width: 1023px) {
@@ -410,6 +399,7 @@ pre::-webkit-scrollbar {
     #document {
         margin: 1em;
         padding: 2em;
+        padding-top: 1.4em;
     }
 
     #header,
