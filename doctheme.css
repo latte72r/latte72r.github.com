@@ -1,31 +1,33 @@
 
 /* unset some styles from the classic stylesheet */
 @font-face {
-    font-family: "Noto Sans Mono JP";
+    font-family: "Bizin Gothic Discord";
     font-style: normal;
     font-weight: normal;
-    src: url("./NotoSansMonoJP-Regular.woff2") format("woff2");
+    src: url("./fonts/BizinGothicDiscord-Regular.woff2") format("woff2");
 }
 /* unset some styles from the classic stylesheet */
 @font-face {
-    font-family: "Noto Sans Mono JP";
+    font-family: "Bizin Gothic Discord";
     font-style: normal;
     font-weight: bold;
-    src: url("./NotoSansMonoJP-Bold.woff2") format("woff2");
-}
-
-div.document,
-body {
-    font-family: "Noto Sans Mono JP", sans-serif;
-    background-color: inherit;
-    color: inherit;
+    src: url("./fonts/BizinGothicDiscord-Bold.woff2") format("woff2");
 }
 
 body {
+    font-family: "Bizin Gothic Discord", sans-serif;
+    color: #000;
     background-color: #E0E0E0;
     display: flex;
     flex-direction: column;
     margin: 0;
+    transition: 0.5s;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #E0E0E0;
+        background-color: #333;
+    }
 }
 
 a.headerlink {
@@ -49,20 +51,15 @@ h2 {
     padding: 0.1em 1.0em;
     display: inline-block;
 }
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: #2980b9;
+        border-bottom: 0.1em solid #2980b9;
+    }
+}
 
 h3 {
     font-size: 1.4em;
-}
-
-aside.sidebar {
-    margin: 5em 0em 0.5em 1em;
-    border: 0.1em solid #ddb;
-    border-radius: 5%;
-    padding: 0em 1em;
-    background-color: #ffe;
-    float: right;
-    clear: right;
-    overflow-x: auto;
 }
 
 body a {
@@ -77,6 +74,21 @@ body a:hover {
     color: #00b0e4;
 }
 
+
+@media (prefers-color-scheme: dark) {
+    body a {
+        color: #0072aa;
+    }
+    
+    body a:visited {
+        color: #6363bb;
+    }
+    
+    body a:hover {
+        color: #00b0e4;
+    }
+}
+
 nav {
     display: flex;
     gap: 0.4em;
@@ -89,7 +101,6 @@ nav a {
     color: #0072aa;
     text-decoration: none;
     padding: 0.4em 0.6em;
-    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:visited {
@@ -101,7 +112,6 @@ nav p {
     color: #555;
     text-decoration: none;
     padding: 0.4em 0.6em;
-    transition: color 0.3s ease, background-color 0.3s ease;
     cursor: default;
 }
 
@@ -118,6 +128,29 @@ nav .divider {
     background-color: #ccc;
 }
 
+@media (prefers-color-scheme: dark) {
+    nav a {
+        color: #1096d9;
+    }
+    
+    nav a:visited {
+        color: #1096d9;
+    }
+    
+    nav p {
+        color: #999;
+    }
+    
+    nav a:hover {
+        background-color: #21373a;
+        color: #2faae8;
+    }
+
+    nav .divider {
+        background-color: #555;
+    }
+}
+
 #header {
     height: 4em;
     width: 100%;
@@ -125,15 +158,22 @@ nav .divider {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: rgba(250, 250, 250, 0.90);
+    background-color: rgba(250, 250, 250, 0.9);
     padding: 1em 0em;
     margin: 0em;
     z-index: 999;
     top: 0;
     left: 0;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
     position: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+    #header {
+        background-color: rgba(30, 30, 30, 0.9);
+        box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
+    }
 }
 
 #header-title {
@@ -141,7 +181,8 @@ nav .divider {
     text-decoration: none;
 }
 
-#github-logo {
+#github-logo-white,
+#github-logo-black {
     width: 1.4em;
     height: 1.4em;
     display: inline-block;
@@ -150,7 +191,8 @@ nav .divider {
     margin: auto;
 }
 
-#x-black {
+#x-logo-white,
+#x-logo-black {
     width: 1.2em;
     height: 1.2em;
     padding: 0.1em 0em;
@@ -158,6 +200,26 @@ nav .divider {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+#github-logo-white,
+#x-logo-white {
+    display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    #github-logo-white {
+        display: inline;
+    }
+    #github-logo-black {
+        display: none;
+    }
+    #x-logo-white {
+        display: inline;
+    }
+    #x-logo-black {
+        display: none;
+    }
 }
 
 #sns-link {
@@ -180,6 +242,17 @@ nav .divider {
     border-radius: 0.3em;
 }
 
+@media (prefers-color-scheme: dark) {
+    #sns-link {
+        color: #E0E0E0;
+    }
+    
+    #sns-link:hover {
+        background-color: #18282a;
+        color: #84d0f7;
+    }
+}
+
 #footer {
     font-size: 1em;
     font-style: italic;
@@ -188,28 +261,10 @@ nav .divider {
     color: #777;
 }
 
-#footer-line {
-    width: 100%;
-    border: none;
-    border-top: 0.12em solid #aaa;
-}
-
 #document {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     border-radius: 0.4em;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.1);
-}
-
-#sidebar-title {
-    margin-bottom: 0em;
-}
-
-#turtle-star {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 12em;
-    height: 12em;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
 }
 
 #main-title {
@@ -220,137 +275,18 @@ nav .divider {
     align-items: center;
 }
 
-.accordion_one {
-    border: 0.1em solid #ccc;
-    border-radius: 0.4em;
-    margin: 1em 0;
-    overflow: hidden;
-}
 
-.accordion_header {
-    background-color: #f0f0f0;
-    cursor: pointer;
-    padding: 0.6em 1em;
-    font-size: 1.2em;
-    font-weight: bold;
-    border-bottom: 0.05em solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.accordion_header:hover {
-    background-color: #e0e0e0;
-}
-
-.accordion_inner {
-    display: none;
-    /* 初めは非表示 */
-    background-color: #fafafa;
-    padding: 1em 3em;
-    font-size: 1em;
-}
-
-.accordion_inner p {
-    margin: 0;
-    padding: 0;
-}
-
-.accordion_one .i_box {
-    display: inline-block;
-}
-
-.accordion_one .one_i {
-    border: solid #333;
-    border-width: 0 0.15em 0.15em 0;
-    display: inline-block;
-    padding: 0.3em;
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-    /* 回転アニメーション */
-}
-
-.accordion_header.open .one_i {
-    transform: rotate(-135deg);
-    /* アコーディオンが開いたときの矢印の向き */
-}
-
-/* ボタンのスタイル */
-input[type="button"] {
-    font-size: 1.4em;
-    font-weight: bold;
-    border-radius: 0.4em;
-    padding: 0.3em 0.5em;
-    cursor: pointer;
-}
-
-/* ボタンのホバー効果 */
-input[type="button"]:hover {
-    opacity: 0.8;
-    transform: translateY(-0.05em);
-}
-
-/* Don't let long code literals extend beyond the right side of the screen */
-span.pre {
-    white-space: unset;
-}
-
-body pre {
-    padding: 0.6rem 0.8rem;
-    border-radius: 0.6rem;
-    border: 0.05rem solid #ac9;
-}
-
-tt,
-code,
-pre {
-    font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", monospace;
-    font-size: 96%;
-}
-
-body tt.xref,
-body a tt,
-body code.xref,
-body a code,
-body table code {
-    font-weight: normal;
-}
-
-table {
-    border: 0.1rem solid #aaa;
-    min-width: 20%;
-    border-radius: 3%;
-    margin: 1rem 2rem;
-}
-
-table td,
-table th {
-    border: 0.05rem solid #aaa;
-    border-radius: 3%;
-}
-
-table p,
-table li {
-    padding: 0rem 2rem;
-    text-align: center;
-}
-
-table thead {
-    background-color: rgb(228 240 245);
-}
-
-table tbody>tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-}
-
-pre {
-    line-height: 125%;
-    overflow-x: scroll;
-    white-space: pre;
-}
-
-pre::-webkit-scrollbar {
-    display: none;
+@media (prefers-color-scheme: dark) {
+    #footer {
+        color: #777;
+    }
+    #document {
+        background-color: #000;
+        box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
+    }
+    #main-title {
+        color: #dfdfdf;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -374,10 +310,6 @@ pre::-webkit-scrollbar {
     #header,
     #blank {
         font-size: 0.9rem;
-    }
-
-    table p {
-        line-height: 0.2;
     }
 
     #blank {

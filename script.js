@@ -37,3 +37,5 @@ $(function () {
         $(this).toggleClass("open");
     });
 });
+
+localStorage.setItem('dark-mode-settings', 'dark');
