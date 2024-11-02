@@ -49,6 +49,7 @@ h2 {
     color: #2980b9;
     border-bottom: 0.1em solid #2980b9;
     padding: 0.1em 1.0em;
+    margin: 0.6em 0em;
     display: inline-block;
 }
 @media (prefers-color-scheme: dark) {
@@ -56,10 +57,6 @@ h2 {
         color: #2980b9;
         border-bottom: 0.1em solid #2980b9;
     }
-}
-
-h3 {
-    font-size: 1.4em;
 }
 
 body a {
@@ -148,6 +145,67 @@ nav .divider {
 
     nav .divider {
         background-color: #555;
+    }
+}
+
+h3 {
+    margin: 0.4em 0em;
+    font-size: 1.4em;
+}
+
+ul {
+    padding-left: 0em;
+    margin-top: 0em;
+}
+
+li {
+    list-style: none;
+}
+
+li h3 {
+    display: inline-block;
+}
+
+li h3::before {
+    content: "・";
+}
+
+li p {
+    text-indent: 1.4em;
+}
+
+.my-works {
+    color: #000;
+    background-color: #FFF;
+    text-decoration: none;
+    padding: 0.2em 0.3em;
+}
+
+.my-works:visited {
+    color: #000;
+    background-color: #FFF;
+}
+
+.my-works:hover {
+    background-color: #e0f7fa;
+    color: #005f8f;
+    border-radius: 0.3em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .my-works {
+        color: #E0E0E0;
+        background-color: #000;
+    }
+
+    .my-works:visited {
+        color: #E0E0E0;
+        background-color: #000;
+    }
+    
+    .my-works:hover {
+        background-color: #18282a;
+        color: #84d0f7;
     }
 }
 
