@@ -14,8 +14,11 @@
     src: url("./fonts/BizinGothicDiscord-Bold.woff2") format("woff2");
 }
 
-body {
+* {
     font-family: "Bizin Gothic Discord", sans-serif;
+}
+
+body {
     color: #000;
     background-color: #E0E0E0;
     display: flex;
@@ -319,7 +322,7 @@ li p {
     color: #777;
 }
 
-#document {
+.document {
     background-color: #FFF;
     border-radius: 0.4em;
     box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
@@ -338,7 +341,7 @@ li p {
     #footer {
         color: #777;
     }
-    #document {
+    .document {
         background-color: #000;
         box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
     }
@@ -360,7 +363,7 @@ li p {
         padding: 0 1rem;
     }
 
-    #document {
+    .document {
         margin: 1em 0em;
         padding: 0em 2em 1em 2em;
     }
@@ -393,7 +396,7 @@ li p {
         padding: 0em 2em;
     }
 
-    #document {
+    .document {
         margin: 1em;
         padding: 2em;
         padding-top: 1.4em;

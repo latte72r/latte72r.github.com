@@ -38,4 +38,9 @@ $(function () {
     });
 });
 
+// ページロード時にフェードイン
+$(document).ready(function () {
+    $('.document').hide().fadeIn(1000);
+});
+
 localStorage.setItem('dark-mode-settings', 'dark');
