@@ -174,7 +174,7 @@ li h3::before {
 }
 
 li p {
-    text-indent: 1.4em;
+    padding-left: 1.4em;
 }
 
 .my-works {
