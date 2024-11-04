@@ -263,8 +263,19 @@ li p {
     margin: auto;
 }
 
+#qiita-icon-white,
+#qiita-icon {
+    width: 1.4em;
+    height: 1.4em;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 #github-logo-white,
-#x-logo-white {
+#x-logo-white,
+#qiita-icon-white {
     display: none;
 }
 
@@ -279,6 +290,12 @@ li p {
         display: inline;
     }
     #x-logo-black {
+        display: none;
+    }
+    #qiita-icon-white {
+        display: inline;
+    }
+    #qiita-icon {
         display: none;
     }
 }
