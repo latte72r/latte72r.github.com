@@ -1,5 +1,5 @@
 
-/* (c) 2022-2024 Ryo Fujinami.*/
+/* (c) 2024 Latte72. */
 
 let headerHight;
 let canvasWidth;
@@ -44,3 +44,8 @@ $(document).ready(function () {
 });
 
 localStorage.setItem('dark-mode-settings', 'dark');
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', './particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});

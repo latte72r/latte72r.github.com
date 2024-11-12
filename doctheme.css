@@ -18,19 +18,32 @@
     font-family: "Bizin Gothic Discord", sans-serif;
 }
 
-body {
-    color: #000;
-    background-color: #E0E0E0;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    transition: 0.5s;
+html {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #E0E0E0;
-        background-color: #333;
-    }
+
+body {
+    color: #E0E0E0;
+    background-color: #333;
+    display: block;
+    justify-content: center;
+    padding:0;
+    margin:0;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 a.headerlink {
@@ -55,12 +68,6 @@ h2 {
     margin: 0.6em 0em;
     display: inline-block;
 }
-@media (prefers-color-scheme: dark) {
-    h2 {
-        color: #2980b9;
-        border-bottom: 0.1em solid #2980b9;
-    }
-}
 
 body a {
     color: #0072aa;
@@ -74,21 +81,6 @@ body a:hover {
     color: #00b0e4;
 }
 
-
-@media (prefers-color-scheme: dark) {
-    body a {
-        color: #0072aa;
-    }
-    
-    body a:visited {
-        color: #6363bb;
-    }
-    
-    body a:hover {
-        color: #00b0e4;
-    }
-}
-
 nav {
     display: flex;
     gap: 0.4em;
@@ -98,26 +90,26 @@ nav {
 
 nav a {
     font-size: 1.4em;
-    color: #0072aa;
+    color: #1096d9;
     text-decoration: none;
     padding: 0.4em 0.6em;
 }
 
 nav a:visited {
-    color: #0072aa;
+    color: #1096d9;
 }
 
 nav p {
     font-size: 1.4em;
-    color: #555;
+    color: #999;
     text-decoration: none;
     padding: 0.4em 0.6em;
     cursor: default;
 }
 
 nav a:hover {
-    background-color: #e0f7fa;
-    color: #005f8f;
+    background-color: #21373a;
+    color: #2faae8;
     border-radius: 0.3em;
 }
 
@@ -125,30 +117,7 @@ nav a:hover {
 nav .divider {
     height: 1.5em;
     width: 0.1em;
-    background-color: #ccc;
-}
-
-@media (prefers-color-scheme: dark) {
-    nav a {
-        color: #1096d9;
-    }
-    
-    nav a:visited {
-        color: #1096d9;
-    }
-    
-    nav p {
-        color: #999;
-    }
-    
-    nav a:hover {
-        background-color: #21373a;
-        color: #2faae8;
-    }
-
-    nav .divider {
-        background-color: #555;
-    }
+    background-color: #555;
 }
 
 h3 {
@@ -178,38 +147,21 @@ li p {
 }
 
 .my-works {
-    color: #000;
-    background-color: #FFF;
+    color: #E0E0E0;
+    background-color: #000;
     text-decoration: none;
     padding: 0.2em 0.3em;
 }
 
 .my-works:visited {
-    color: #000;
-    background-color: #FFF;
+    color: #E0E0E0;
+    background-color: #000;
 }
 
 .my-works:hover {
-    background-color: #e0f7fa;
-    color: #005f8f;
+    background-color: #18282a;
+    color: #84d0f7;
     border-radius: 0.3em;
-}
-
-@media (prefers-color-scheme: dark) {
-    .my-works {
-        color: #E0E0E0;
-        background-color: #000;
-    }
-
-    .my-works:visited {
-        color: #E0E0E0;
-        background-color: #000;
-    }
-    
-    .my-works:hover {
-        background-color: #18282a;
-        color: #84d0f7;
-    }
 }
 
 #header {
@@ -219,22 +171,15 @@ li p {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background-color: rgba(250, 250, 250, 0.9);
     padding: 1em 0em;
     margin: 0em;
     z-index: 999;
     top: 0;
     left: 0;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    background-color: rgba(30, 30, 30, 0.9);
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease;
     position: fixed;
-}
-
-@media (prefers-color-scheme: dark) {
-    #header {
-        background-color: rgba(30, 30, 30, 0.9);
-        box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
-    }
 }
 
 #header-title {
@@ -242,8 +187,7 @@ li p {
     text-decoration: none;
 }
 
-#github-logo-white,
-#github-logo-black {
+#github-logo-white {
     width: 1.4em;
     height: 1.4em;
     display: inline-block;
@@ -252,8 +196,7 @@ li p {
     margin: auto;
 }
 
-#x-logo-white,
-#x-logo-black {
+#x-logo-white {
     width: 1.2em;
     height: 1.2em;
     padding: 0.1em 0em;
@@ -263,8 +206,7 @@ li p {
     margin: auto;
 }
 
-#qiita-icon-white,
-#qiita-icon {
+#qiita-icon-white {
     width: 1.4em;
     height: 1.4em;
     display: inline-block;
@@ -273,38 +215,11 @@ li p {
     margin: auto;
 }
 
-#github-logo-white,
-#x-logo-white,
-#qiita-icon-white {
-    display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    #github-logo-white {
-        display: inline;
-    }
-    #github-logo-black {
-        display: none;
-    }
-    #x-logo-white {
-        display: inline;
-    }
-    #x-logo-black {
-        display: none;
-    }
-    #qiita-icon-white {
-        display: inline;
-    }
-    #qiita-icon {
-        display: none;
-    }
-}
-
 #sns-link {
     display: flex;
     gap: 0.2em;
     font-weight: bold;
-    color: #000;
+    color: #E0E0E0;
     text-decoration: none;
     padding: 0.3em 0.5em;
     line-height: 1.8em;
@@ -315,73 +230,40 @@ li p {
     display: flex;
     gap: 0.2em;
     font-weight: bold;
-    background-color: #e0f7fa;
-    color: #005f8f;
+    background-color: #18282a;
+    color: #84d0f7;
     border-radius: 0.3em;
-}
-
-@media (prefers-color-scheme: dark) {
-    #sns-link {
-        color: #E0E0E0;
-    }
-    
-    #sns-link:hover {
-        background-color: #18282a;
-        color: #84d0f7;
-    }
 }
 
 #footer {
     font-size: 1em;
     font-style: italic;
     text-align: center;
-    margin: 0em 0em 2em 0em;
+    padding: 0em 0em 2em 0em;
     color: #777;
 }
 
 .document {
-    background-color: #FFF;
     border-radius: 0.4em;
-    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
 }
 
 #main-title {
     font-size: 2.25em;
     margin: 0.1em 0em 0em 1em;
     font-style: italic;
-    color: #333;
+    color: #dfdfdf;
     align-items: center;
-}
-
-
-@media (prefers-color-scheme: dark) {
-    #footer {
-        color: #777;
-    }
-    .document {
-        background-color: #000;
-        box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
-    }
-    #main-title {
-        color: #dfdfdf;
-    }
 }
 
 @media (max-width: 1023px) {
     html {
-        width: 96%;
         font-size: 1.2rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    body {
-        padding: 0 1rem;
     }
 
     .document {
-        margin: 1em 0em;
+        margin: 2em 2em;
         padding: 0em 2em 1em 2em;
     }
 
@@ -391,7 +273,7 @@ li p {
     }
 
     #blank {
-        height: 7em;
+        height: 6em;
         width: 100%;
     }
 
@@ -402,19 +284,11 @@ li p {
 
 @media (min-width: 1024px) {
     html {
-        width: 90%;
         font-size: 1rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    body {
-        padding: 0em 2em;
     }
 
     .document {
-        margin: 1em;
+        margin: 2em 10em;
         padding: 2em;
         padding-top: 1.4em;
     }
@@ -425,7 +299,7 @@ li p {
     }
 
     #blank {
-        height: 7em;
+        height: 6em;
         width: 100%;
     }
 
