@@ -276,10 +276,6 @@ li p {
         height: 6em;
         width: 100%;
     }
-
-    #footer {
-        width: 100%;
-    }
 }
 
 @media (min-width: 1024px) {
@@ -301,9 +297,5 @@ li p {
     #blank {
         height: 6em;
         width: 100%;
-    }
-
-    .highlight {
-        margin-right: 6rem;
     }
 }
