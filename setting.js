@@ -1,6 +1,7 @@
 
 /* (c) 2024 Latte72. */
 
+/*
 let headerHight;
 let canvasWidth;
 let canvasHeight;
@@ -37,13 +38,14 @@ $(function () {
         $(this).toggleClass("open");
     });
 });
+*/
 
 // ページロード時にフェードイン
 $(document).ready(function () {
     $('.document').hide().fadeIn(1000);
 });
 
-localStorage.setItem('dark-mode-settings', 'dark');
+// localStorage.setItem('dark-mode-settings', 'dark');
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', './particles.json', function() {
