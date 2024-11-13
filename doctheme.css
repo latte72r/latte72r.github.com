@@ -36,10 +36,11 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    position: absolute;
+    position: fixed;
 }
 
 #main {
+    position: relative;
     margin: 0 auto;
 }
 
@@ -257,10 +258,6 @@ li p {
     html {
         font-size: 1.2rem;
     }
-    
-    #particles-js {
-        height: 120vh;
-    }
 
     .document {
         margin: 2em 2em;
@@ -285,10 +282,6 @@ li p {
 @media (min-width: 1024px) {
     html {
         font-size: 1rem;
-    }
-
-    #main {
-        position: relative;
     }
 
     .document {
