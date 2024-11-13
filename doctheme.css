@@ -259,13 +259,8 @@ li p {
     }
     
     #particles-js {
-        height: 140vh;
+        height: 120vh;
     }
-
-#main {
-    position: relative;
-    margin: 0 auto;
-}
 
     .document {
         margin: 2em 2em;
