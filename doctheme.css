@@ -18,16 +18,9 @@
     font-family: "Bizin Gothic Discord", sans-serif;
 }
 
-html {
-    display: block;
-    margin: 0;
-}
-
 body {
     color: #E0E0E0;
     background-color: #223;
-    padding:0;
-    margin:0;
 }
 
 #particles-js {
@@ -242,7 +235,7 @@ li p {
 
 .document {
     border-radius: 0.4em;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
     box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.6);
 }
 
@@ -257,6 +250,10 @@ li p {
 @media (max-width: 1023px) {
     html {
         font-size: 1.2rem;
+    }
+
+    #particles-js {
+        height: 98%;
     }
 
     .document {
