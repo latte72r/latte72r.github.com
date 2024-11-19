@@ -249,7 +249,7 @@ li p {
 
 @media (max-width: 1023px) {
     html {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     #particles-js {
@@ -257,13 +257,17 @@ li p {
     }
 
     .document {
-        margin: 2em 2em;
+        margin: 1.6em 1em;
         padding: 0em 2em 1em 2em;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
     }
 
     #header,
     #blank {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #blank {
