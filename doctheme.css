@@ -61,15 +61,11 @@ h2 {
 }
 
 body a {
-    color: #0072aa;
-}
-
-body a:visited {
-    color: #6363bb;
+    color: #1096d9;
 }
 
 body a:hover {
-    color: #00b0e4;
+    color: #00c0f0;
 }
 
 nav {
@@ -84,10 +80,6 @@ nav a {
     color: #1096d9;
     text-decoration: none;
     padding: 0.4em 0.6em;
-}
-
-nav a:visited {
-    color: #1096d9;
 }
 
 nav p {
@@ -247,6 +239,41 @@ li p {
     align-items: center;
 }
 
+#image-turtle {
+    width: 55%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#image-shilitori {
+    width: 50%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#image-easyturtle {
+    width: 55%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#image-lsb {
+    width: 50%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#image-tkwidgets {
+    width: 30%;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
 @media (max-width: 1023px) {
     html {
         font-size: 1.6rem;
@@ -262,12 +289,12 @@ li p {
     }
 
     .nav-link {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     #header,
     #blank {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #blank {
@@ -277,6 +304,11 @@ li p {
 
     #footer {
         padding: 0em 0em 2em 0em;
+    }
+
+    .works-image {
+        width: 90%;
+        height: auto;
     }
 }
 
@@ -303,5 +335,10 @@ li p {
 
     #footer {
         padding: 0em 0em 2em 0em;
+    }
+
+    .works-image {
+        height: auto;
+        width: 50%;
     }
 }
