@@ -40,11 +40,11 @@ const  WorksPage: React.FC = () => {
             </div>
             <div className="document">
                 <section id="lsb">
-                    <h2>Latte&appos;s Simple Browser</h2>
+                    <h2>Latte&apos;s Simple Browser</h2>
                     <p><img id="image-lsb" className="works-image" src="./image/lsb.png" alt="image" /></p>
                     <p>Documents：<Link href="https://latte72r.github.io/LSB/" target="_blank">https://latte72r.github.io/LSB/</Link></p>
                     <p>GitHub：<Link href="https://github.com/latte72r/LSB/" target="_blank">https://github.com/latte72r/LSB/</Link></p>
-                    <p>Latte&appos;s Simple Browser ( LSB ) は、独自に開発されたシンプルで軽量なブラウザです。</p>
+                    <p>Latte&apos;s Simple Browser ( LSB ) は、独自に開発されたシンプルで軽量なブラウザです。</p>
                     <p>このプロジェクトは、ブラウザの基本機能を学びながら実装することを目的として設計されています。</p>
                 </section>
             </div>
