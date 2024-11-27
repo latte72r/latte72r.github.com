@@ -94,27 +94,6 @@ h3 {
     font-size: 1.4em;
 }
 
-ul {
-    padding-left: 0em;
-    margin-top: 0em;
-}
-
-li {
-    list-style: none;
-}
-
-li h3 {
-    display: inline-block;
-}
-
-li h3::before {
-    content: "・";
-}
-
-li p {
-    padding-left: 1.4em;
-}
-
 .my-works {
     color: #E0E0E0;
     background-color: #000;

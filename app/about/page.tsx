@@ -34,34 +34,16 @@ const HomePage: React.FC = () => {
             </div>
             <div className="document">
                 <h2>Skills</h2>
-                <ul>
-                    <li>
-                        <p>Python / C / C++</p>
-                    </li>
-                    <li>
-                        <p>HTML / CSS / JavaScript</p>
-                    </li>
-                    <li>
-                        <p>Visual Basic for Applications</p>
-                    </li>
-                    <li>
-                        <p>Windows / Linux / WSL</p>
-                    </li>
-                </ul>
+                <p>Python / C / C++</p>
+                <p>HTML / CSS / JavaScript</p>
+                <p>Visual Basic for Applications</p>
+                <p>Windows / Linux / WSL</p>
             </div>
             <div className="document">
                 <h2>Interests</h2>
-                <ul>
-                    <li>
-                        <p>自作OS / 自作コンパイラ / 自作ブラウザ</p>
-                    </li>
-                    <li>
-                        <p>自然言語処理 / Transformer / Deep Learning / 画像認識</p>
-                    </li>
-                    <li>
-                        <p>Webフロントエンド / React / Next.js</p>
-                    </li>
-                </ul>
+                <p>自作OS / 自作言語 / 自作コンパイラ / 自作ブラウザ</p>
+                <p>自然言語処理 / Transformer / Deep Learning / 画像認識</p>
+                <p>Webフロントエンド / React / Next.js</p>
             </div>
         </MainContent>
     );
