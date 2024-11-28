@@ -70,18 +70,18 @@ nav a {
     padding: 0.4em 0.6em;
 }
 
+nav a:hover {
+    background-color: #21373a;
+    color: #00c0f0;
+    border-radius: 0.3em;
+}
+
 nav p {
     font-size: 1.4em;
     color: #999;
     text-decoration: none;
     padding: 0.4em 0.6em;
     cursor: default;
-}
-
-nav a:hover {
-    background-color: #21373a;
-    color: #2faae8;
-    border-radius: 0.3em;
 }
 
 /* 区切り線 */
@@ -116,7 +116,7 @@ h3 {
 }
 
 .header {
-    height: 4em;
+    height: 3.6em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -140,6 +140,11 @@ h3 {
     align-items: center;
     margin-left: 0.8em;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.header-title:hover {
+    color: #dfdfdf;
 }
 
 #github-logo-white {
@@ -190,7 +195,7 @@ h3 {
     gap: 0.2em;
     font-weight: bold;
     background-color: #18282a;
-    color: #84d0f7;
+    color: #00c0f0;
     border-radius: 0.3em;
 }
 
@@ -214,13 +219,14 @@ h3 {
 
 .not-found {
     text-align: center;
-    margin: 12em 0em;
+    margin-top: 12em;
+    margin-bottom: 14em;
 }
 
 .not-found-h1 {
     font-size: 3em;
     color: #E0E0E0;
-    margin: 1em 0em;
+    margin: 1.6em 0em;
 }
 
 #page-top {
@@ -234,23 +240,26 @@ h3 {
 #title-top {
     color: #E0E0E0;
     text-align: center;
-    margin: 0.4em 0em;
+    margin: 0em 0em 1.6em 0em;
+    cursor: default;
 }
 
 .link-button {
     font-size: 1.8em;
     color: #E0E0E0;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.85);
     text-decoration: none;
     padding: 0.4em 1.6em;
     border-radius: 0.3em;
     margin: 1em 0.4em;
     cursor: pointer;
+    border: 0.05em solid #E0E0E0;
 }
 
 /* ボタンのホバー効果 */
 .link-button:hover {
-    color: #84d0f7;
+    color: #00c0f0;
+    border: 0.05em solid #00c0f0;
     transform: translateY(-0.05em);
 }
 
