@@ -1,6 +1,11 @@
 
 import MainContent from '../elements';
 import React from 'react';
+import Image from 'next/image';
+
+import GitHubLogoWhite from '@/public/logos/github-mark-white.png';
+import XLogoWhite from '@/public/logos/x-logo-white.png';
+import QiitaIconWhite from '@/public/logos/qiita-white-icon.png';
 
 const HomePage: React.FC = () => {
     return (
@@ -17,17 +22,17 @@ const HomePage: React.FC = () => {
                     <h3>SNS Links</h3>
                     <span className="sns-link-span">
                         <a href="https://github.com/Latte72R" className="sns-link" target="_blank">
-                            <img id="github-logo-white" src="./logos/github-mark-white.png" alt="" />
+                            <Image id="github-logo-white" src={GitHubLogoWhite} alt="" priority/>
                             @Latte72R</a>
                     </span>
                     <span className="sns-link-span">
                         <a href="https://x.com/Latte72R" className="sns-link" target="_blank">
-                            <img id="x-logo-white" src="./logos/x-logo-white.png" alt="" />
+                            <Image id="x-logo-white" src={XLogoWhite} alt="" priority/>
                             @Latte72R</a>
                     </span>
                     <span className="sns-link-span">
                         <a href="https://qiita.com/Latte72R" className="sns-link" target="_blank">
-                            <img id="qiita-icon-white" src="./logos/qiita-white-icon.png" alt="" />
+                            <Image id="qiita-icon-white" src={QiitaIconWhite} alt="" priority/>
                             @Latte72R</a>
                     </span>
                 </section>

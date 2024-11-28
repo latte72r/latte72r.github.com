@@ -96,9 +96,7 @@ interface HeaderProps {
 const Header = (props: HeaderProps) => {
     return (
         <div className="header">
-            <Link href="./" legacyBehavior><a className="header-title">
-                <h1 className="main-title">Latte72</h1>
-            </a></Link>
+            <Link href="./" legacyBehavior><a className="header-title">Latte72</a></Link>
             <HeaderNav page={props.page} />
         </div>
     );

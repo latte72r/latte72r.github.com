@@ -58,7 +58,9 @@ nav {
     display: flex;
     gap: 0.4em;
     align-items: center;
-    padding-right: 1em;
+    margin-right: 1em;
+    position: absolute; 
+    right: 0;
 }
 
 nav a {
@@ -84,6 +86,7 @@ nav a:hover {
 
 /* 区切り線 */
 nav .divider {
+    font-size: 1rem;
     height: 1.5em;
     width: 0.1em;
     background-color: #555;
@@ -116,9 +119,7 @@ h3 {
     height: 4em;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 1em 0em;
     margin: 0em;
     z-index: 999;
@@ -133,11 +134,12 @@ h3 {
 .header-title {
     display: flex;
     text-decoration: none;
-}
-
-.header-title {
-    display: flex;
-    text-decoration: none;
+    font-size: 2.25em;
+    font-style: italic;
+    color: #dfdfdf;
+    align-items: center;
+    margin-left: 0.8em;
+    font-weight: bold;
 }
 
 #github-logo-white {
@@ -203,14 +205,6 @@ h3 {
     border-radius: 0.4em;
     background-color: rgba(0, 0, 0, 0.85);
     box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.6);
-}
-
-.main-title {
-    font-size: 2.25em;
-    margin: 0.1em 0em 0em 1em;
-    font-style: italic;
-    color: #dfdfdf;
-    align-items: center;
 }
 
 .works-image {
