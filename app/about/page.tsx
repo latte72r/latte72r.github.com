@@ -46,7 +46,8 @@ const HomePage: React.FC = () => {
             </div>
             <div className="document">
                 <h2>Interests</h2>
-                <p>自作OS / 自作言語 / 自作コンパイラ / 自作ブラウザ</p>
+                <p>低レイヤー / 自作OS / 自作ブラウザ</p>
+                <p>LLVM / MLIR / 自作言語 / 自作コンパイラ</p>
                 <p>自然言語処理 / Transformer / Deep Learning / 画像認識</p>
                 <p>Webフロントエンド / React / Next.js</p>
             </div>
