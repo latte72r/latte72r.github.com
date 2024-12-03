@@ -1,12 +1,10 @@
 
-/* unset some styles from the classic stylesheet */
 @font-face {
     font-family: "Bizin Gothic Discord";
     font-style: normal;
     font-weight: normal;
     src: url("./fonts/BizinGothicDiscord-Regular.woff2") format("woff2");
 }
-/* unset some styles from the classic stylesheet */
 @font-face {
     font-family: "Bizin Gothic Discord";
     font-style: normal;
@@ -86,9 +84,9 @@ nav p {
 
 /* 区切り線 */
 nav .divider {
-    font-size: 1rem;
-    height: 1.5em;
-    width: 0.1em;
+    height: 1.5rem;
+    width: 0.1rem;
+    border-radius: 0.05rem;
     background-color: #555;
 }
 
@@ -110,7 +108,7 @@ h3 {
 }
 
 .my-works:hover {
-    background-color: #18282a;
+    background-color: #23393c;
     color: #84d0f7;
     border-radius: 0.3em;
 }
@@ -127,7 +125,6 @@ h3 {
     left: 0;
     background-color: rgba(30, 30, 30, 0.9);
     box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s ease;
     position: fixed;
 }
 
@@ -208,7 +205,7 @@ h3 {
 }
 
 .document {
-    border-radius: 0.4em;
+    border-radius: 0.6em;
     background-color: rgba(0, 0, 0, 0.85);
     box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.6);
 }
@@ -216,6 +213,7 @@ h3 {
 .works-image {
     margin-left: 1em;
     margin-bottom: 1em;
+    border-radius: 0.4em;
 }
 
 .not-found {
@@ -252,7 +250,7 @@ h3 {
     text-decoration: none;
     padding: 0.4em 1.6em;
     border-radius: 0.3em;
-    margin: 1em 0.4em;
+    margin: 1em 0.6em;
     cursor: pointer;
     border: 0.05em solid #E0E0E0;
 }
@@ -261,7 +259,6 @@ h3 {
 .link-button:hover {
     color: #00c0f0;
     border: 0.05em solid #00c0f0;
-    transform: translateY(-0.05em);
 }
 
 @media (max-width: 1023px) {
